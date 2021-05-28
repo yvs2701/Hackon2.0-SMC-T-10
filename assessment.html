@@ -179,9 +179,17 @@
             question: "Did you sleep poorly last night ?",
             healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Health tip heading</h5>
+                            <h5 class="mb-1">Stop overthinking !</h5>
                         </div>
-                        <p class="mb-1">Health tip explained</p>
+                        <p class="mb-1">
+                            Usually taking too much workload leads to stress, or too much thinking may also clog up the mind which
+                            is not good for your sleep cycles.
+                        </p>
+                        <p class="mb-1">
+                            If that's not the case you should go visit your doctor asap as even the 
+                            stress of chronic illness can also cause insomnia ! Do get a checkup if you have heartburns or diabetes, 
+                            as even they lead to the same.
+                        </p>
                     </div>`
         },
         {
@@ -284,7 +292,7 @@
             tipsList += item + "\n";
         });
 
-        if (tips) {
+        if (tips.length != 0) {
             results =
                 `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
             <div class="card-body">
@@ -295,9 +303,20 @@
                     </div >
                 </div >
             </div >
+        </div >
+        <div class="card m-3" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+            <div class="card-body">
+                <h4 class="card-title p-3">Dont worry, we are here for you !</h4>
+                <div class="card-text">
+                    <p class="card-text p-3">Are you feeling unwell ? Do not wait, it may get worse. Consult
+                    expert doctors who are ready to help you 24&times7.
+                    </p>
+                    <a href="./consult.html" class="btn btn-primary m-3 mt-1">Get in touch</a>
+                </div >
+            </div >
         </div >`;
         }
-        else //TODO: display a text when user is not having any health issues
+        else
         {
             results =
                 `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
@@ -305,12 +324,32 @@
                 <h4 class="card-title p-3" id="question">Yay, you look so fit !</h4>
                 <div class="card-text">
                     <div class="list-group">
-                        ${tipsList}
+                        <div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Just be YOURSELF !</h5>
+                        </div>
+                        <p class="mb-1">
+                            You are already oozing positivity, you may charge up people around you with your charisma. The only thing
+                            we want is you to be YOU. All the best and stay safe :)
+                        </p>
+                    </div>
                     </div >
+                </div >
+            </div >
+        </div >
+        <div class="card m-3" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+            <div class="card-body">
+                <h4 class="card-title p-3">Still have some queries ?</h4>
+                <div class="card-text">
+                    <p class="card-text p-3">Are you feeling unwell ? Do not wait, it may get worse. Consult
+                    expert doctors who are ready to help you 24&times7.
+                    </p>
+                    <a href="./consult.html" class="btn btn-primary m-3 mt-1">Get in touch</a>
                 </div >
             </div >
         </div >`;
         }
+
         document.getElementById('questionContainer').innerHTML = results;
     }
 
