@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God-Bless</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">God-Bless</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="assessment.html">Assessment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consult.html">Consult</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header ends -->
+    <div class="container" id="questionContainer" style="margin-top: 12vh; margin-bottom: 10vh;">
+        <div style="color:#ee6e73;"><i class="progress-index">Question x/N</i></div>
+        <div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);">
+            <div class="card-body">
+                <h4 class="card-title" id="question">Question</h4>
+                <div class="card-text">
+                    <div class="form-check">
+                        <input class="form-check-input options" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input options" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <a href="#" class="btn" id="next-question" style="color: white;">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-3"
+        style="bottom: 0; background-color: rgba(238, 110, 114, 0.644); color:white;">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5" style="color:black;">
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column 0 -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">God-Bless</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>This site is dedicated to look after your mental health.
+                        After all YOU matter for us, you are a precious life and deserve an expression to your
+                        emotions. If you need help then we are always by your side.
+                    </p>
+                </div>
+                <!-- Grid column ends -->
+
+                <!-- Grid column 1 -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="./assessment.html">Take a skill assessment</a>
+                    </p>
+                    <p>
+                        <a href="./consult.html">Contact the doctor</a>
+                    </p>
+                </div>
+                <!-- Grid column ends -->
+
+                <!-- Grid column 2 -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact our Doc</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        John Doe
+                    </p>
+                    <p>
+                        <a target="_blank"
+                            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjRRPSfkvXmsMzrgLNVcdplMQNsLrHJfKMsrbHZltZvJXfsBqprHbnNXJqbfPlsLcnhVrR">Email</a>
+                    </p>
+                    <p>
+                        + 91 ABCDEFGHIJ
+                    </p>
+                    <p>
+                        + 91 KLMNOPQRST
+                    </p>
+                </div>
+                <!-- Grid column ends -->
+            </div>
+            <!-- Grid row ends -->
+        </div>
+        <!-- Footer Links ends -->
+
+        <!-- Developer link -->
+        <div class="footer-copyright text-center py-3" style="color: black;">Developed by SMC T-10
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#e64848" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            <a href="https://github.com/SERVER-MONKS-COMMUNITY">SERVER-MONKS-COMMUNITY</a>
+        </div>
+        <!-- Developer link ends -->
+
+    </footer>
+    <!-- Footer end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script>
+const displayQuestion = document.getElementById("question");
+const nextBtn = document.getElementById("next-question");
+const progressIndex = document.getElementsByClassName("progress-index")[0];
+
+let quiz = [
+    {
+        question: "Have you recently talked openly about your feelings ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Speak out, LOUD !</h5>
+                        </div>
+                        <p class="mb-1">
+                            Though personal contact needs to be severly limited. you can use phone or video chat
+                            to talk with friends and family.
+                        </p>
+                        <p class="mb-1">
+                            Now may be a great oppurtunity to virtually connect with loved ones you see far too rarely.
+                        </p>
+                    </div>`
+    },
+    {
+        question: "Did you sleep poorly last night ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Health tip heading</h5>
+                        </div>
+                        <p class="mb-1">Health tip explained</p>
+                    </div>`
+    },
+    {
+        question: "Do you often experience extreme inner turmoil, that has no obvious cause ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Try excercising you body</h5>
+                        </div>
+                        <p class="mb-1">
+                            Excercise helps your body reduce stress hromones, of which it is probably producing more of than
+                            usual at the moment.
+                        </p>
+                        <p class="mb-1">
+                            This, in turn, lowers baseline tension, making it easier for you to keep cool head 
+                            while also giving boost to your immune system.
+                        </p>
+                    </div>`
+    },
+    {
+        question: "Are you feeling down and sad ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Accept the situations as they are</h5>
+                        </div>
+                        <p class="mb-1">
+                            Though we are passing through a tough time during this pandemic. But we should be hopeful.
+                            As "this too shall pass".
+                        </p>
+                    </div>`
+    },
+    {
+        question: "Do you have thoughts like 'I would be better off if I didn't exist' ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Live it out !</h5>
+                        </div>
+                        <p class="mb-1">
+                            To break the vicious cycle of worry, first become aware of your fear and worry. Don't judge.
+                            Worries about health and future are justified reactions at the moment.
+                        </p>
+                        <p class="mb-1">
+                            Instead, begin to assess the situation as it is and weigh your options for how to move forward.
+                        </p>
+                    </div>`
+    },
+    {
+        question: "Do you have trouble concentrating on things, such as reading a newspaper or watching TV ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">You need to relax...</h5>
+                        </div>
+                        <p class="mb-1">
+                            Try to keep a cool head and do things because you think they make sense,
+                            not because everyone else does them.
+                        </p>
+                        <p class="mb-1">
+                            Let not the toxic people around you influence your wellbeing.
+                        </p>
+                    </div>`
+    },
+    {
+        question: "Feeling bad about yourself, or that you are a failure or have let yourself or your family down ?",
+        healthTip: `<div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Don't sweat it too much</h5>
+                        </div>
+                        <p class="mb-1">
+                            Your family will always love you, that's why you call them your family, and maybe that's why you don't 
+                            want to let them down.
+                        </p>
+                        <p class="mb-1">
+                            Face your fears
+                        </p>
+                        <p class="mb-1">
+                            Plan you day
+                        </p>
+                        <p class="mb-1">
+                            Keep moving
+                        </p>
+                        <p class="mb-1">
+                            Make room for yourself
+                        </p>
+                    </div>`
+    }
+];
+
+let index = 0;
+displayQuestion.innerText = quiz[index].question;
+progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
+
+let tips = [];
+
+const showResult = () => {
+    nextBtn.removeEventListener('click', clickHandler); // this will only work when function to be removed is passed as well 
+    // therefore we had to make an external function (i.e. not anonymous) in the addEventListener
+    let results = "";
+    let tipsList = "";
+    tips.forEach(item => {
+        tipsList += item +"\n";
+    });
+
+    if (tips) {
+        results = 
+        `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+            <div class="card-body">
+                <h4 class="card-title p-3" id="question">We should have a talk...</h4>
+                <div class="card-text">
+                    <div class="list-group">
+                        ${tipsList}
+                    </div >
+                </div >
+            </div >
+        </div >`;
+    }
+    else //TODO: display a text when user is not having any health issues
+    {
+        results = 
+        `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+            <div class="card-body">
+                <h4 class="card-title p-3" id="question">Yay, you look so fit !</h4>
+                <div class="card-text">
+                    <div class="list-group">
+                        ${tipsList}
+                    </div >
+                </div >
+            </div >
+        </div >`;
+    }
+    document.getElementById('questionContainer').innerHTML = results;
+}
+
+const clickHandler = (e) => {
+    e.preventDefault();
+    const options = document.getElementsByClassName("options");
+
+    if (index == quiz.length - 1){
+        showResult();
+        return;
+    }
+
+
+    if (options[0].checked || options[1].checked) {
+        
+        if (index == 0 && options[1].checked) {
+            tips.push(quiz[index].healthTip);
+        }
+        else if (index != 0 && options[0].checked) {
+            tips.push(quiz[index].healthTip);
+        }
+
+        index++;
+
+        if (index == quiz.length - 1) {
+            nextBtn.innerText = "Submit";
+        }
+
+        // move to the next question
+        progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
+        displayQuestion.innerText = quiz[index].question;
+        options[0].checked = false;
+        options[1].checked = false;
+    }
+}
+
+nextBtn.addEventListener('click', clickHandler);
+</script>
+
+</html>
