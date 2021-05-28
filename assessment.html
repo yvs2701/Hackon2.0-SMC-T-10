@@ -37,6 +37,8 @@
         </div>
     </nav>
     <!-- Header ends -->
+
+    <!-- Assessment questions -->
     <div class="container" id="questionContainer" style="margin-top: 12vh; margin-bottom: 10vh;">
         <div style="color:#ee6e73;"><i class="progress-index">Question x/N</i></div>
         <div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);">
@@ -64,7 +66,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Assessment skeleton ends -->
 
     <!-- Footer -->
     <footer class="page-footer font-small pt-3"
@@ -142,6 +144,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+<!-- Script to make our assessment work (changes questions/evaluates answers/displays results) -->
 <script>
 const displayQuestion = document.getElementById("question");
 const nextBtn = document.getElementById("next-question");
