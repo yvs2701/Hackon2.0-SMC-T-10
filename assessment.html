@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png" type="image/png" sizes="16x16">
     <title>God-Bless</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,7 +17,14 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">God-Bless</a>
+            <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg>
+                God-Bless
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -146,14 +154,15 @@
     crossorigin="anonymous"></script>
 <!-- Script to make our assessment work (changes questions/evaluates answers/displays results) -->
 <script>
-const displayQuestion = document.getElementById("question");
-const nextBtn = document.getElementById("next-question");
-const progressIndex = document.getElementsByClassName("progress-index")[0];
+    const displayQuestion = document.getElementById("question");
+    const nextBtn = document.getElementById("next-question");
+    const progressIndex = document.getElementsByClassName("progress-index")[0];
 
-let quiz = [
-    {
-        question: "Have you recently talked openly about your feelings ?",
-        healthTip: `<div class="list-group-item">
+    // array of objects, where each object contains the question and an health tip if user's input is not indicating a good health
+    let quiz = [
+        {
+            question: "Have you recently talked openly about your feelings ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Speak out, LOUD !</h5>
                         </div>
@@ -165,19 +174,19 @@ let quiz = [
                             Now may be a great oppurtunity to virtually connect with loved ones you see far too rarely.
                         </p>
                     </div>`
-    },
-    {
-        question: "Did you sleep poorly last night ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Did you sleep poorly last night ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Health tip heading</h5>
                         </div>
                         <p class="mb-1">Health tip explained</p>
                     </div>`
-    },
-    {
-        question: "Do you often experience extreme inner turmoil, that has no obvious cause ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Do you often experience extreme inner turmoil, that has no obvious cause ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Try excercising you body</h5>
                         </div>
@@ -190,10 +199,10 @@ let quiz = [
                             while also giving boost to your immune system.
                         </p>
                     </div>`
-    },
-    {
-        question: "Are you feeling down and sad ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Are you feeling down and sad ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Accept the situations as they are</h5>
                         </div>
@@ -202,10 +211,10 @@ let quiz = [
                             As "this too shall pass".
                         </p>
                     </div>`
-    },
-    {
-        question: "Do you have thoughts like 'I would be better off if I didn't exist' ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Do you have thoughts like 'I would be better off if I didn't exist' ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Live it out !</h5>
                         </div>
@@ -217,10 +226,10 @@ let quiz = [
                             Instead, begin to assess the situation as it is and weigh your options for how to move forward.
                         </p>
                     </div>`
-    },
-    {
-        question: "Do you have trouble concentrating on things, such as reading a newspaper or watching TV ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Do you have trouble concentrating on things, such as reading a newspaper or watching TV ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">You need to relax...</h5>
                         </div>
@@ -232,10 +241,10 @@ let quiz = [
                             Let not the toxic people around you influence your wellbeing.
                         </p>
                     </div>`
-    },
-    {
-        question: "Feeling bad about yourself, or that you are a failure or have let yourself or your family down ?",
-        healthTip: `<div class="list-group-item">
+        },
+        {
+            question: "Feeling bad about yourself, or that you are a failure or have let yourself or your family down ?",
+            healthTip: `<div class="list-group-item">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Don't sweat it too much</h5>
                         </div>
@@ -256,27 +265,28 @@ let quiz = [
                             Make room for yourself
                         </p>
                     </div>`
-    }
-];
+        }
+    ];
 
-let index = 0;
-displayQuestion.innerText = quiz[index].question;
-progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
+    let index = 0;
+    displayQuestion.innerText = quiz[index].question;
+    progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
 
-let tips = [];
+    let tips = [];// stores health tips
 
-const showResult = () => {
-    nextBtn.removeEventListener('click', clickHandler); // this will only work when function to be removed is passed as well 
-    // therefore we had to make an external function (i.e. not anonymous) in the addEventListener
-    let results = "";
-    let tipsList = "";
-    tips.forEach(item => {
-        tipsList += item +"\n";
-    });
+    const showResult = () => {
+        nextBtn.removeEventListener('click', clickHandler); /* this will only work when function to be removed is passed as well 
+        therefore we had to make an external function (i.e. not anonymous) in the addEventListener */
 
-    if (tips) {
-        results = 
-        `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+        let results = "";  // stores the result to be displayed
+        let tipsList = ""; // concatenates all the health tips into a single html string
+        tips.forEach(item => {
+            tipsList += item + "\n";
+        });
+
+        if (tips) {
+            results =
+                `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
             <div class="card-body">
                 <h4 class="card-title p-3" id="question">We should have a talk...</h4>
                 <div class="card-text">
@@ -286,11 +296,11 @@ const showResult = () => {
                 </div >
             </div >
         </div >`;
-    }
-    else //TODO: display a text when user is not having any health issues
-    {
-        results = 
-        `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
+        }
+        else //TODO: display a text when user is not having any health issues
+        {
+            results =
+                `<div class="card" style="box-shadow: 6px 6px 3px 2px rgba(238, 110, 114, 0.1);>
             <div class="card-body">
                 <h4 class="card-title p-3" id="question">Yay, you look so fit !</h4>
                 <div class="card-text">
@@ -300,44 +310,46 @@ const showResult = () => {
                 </div >
             </div >
         </div >`;
-    }
-    document.getElementById('questionContainer').innerHTML = results;
-}
-
-const clickHandler = (e) => {
-    e.preventDefault();
-    const options = document.getElementsByClassName("options");
-
-    if (index == quiz.length - 1){
-        showResult();
-        return;
+        }
+        document.getElementById('questionContainer').innerHTML = results;
     }
 
-
-    if (options[0].checked || options[1].checked) {
-        
-        if (index == 0 && options[1].checked) {
-            tips.push(quiz[index].healthTip);
-        }
-        else if (index != 0 && options[0].checked) {
-            tips.push(quiz[index].healthTip);
-        }
-
-        index++;
+    // next button click handler
+    const clickHandler = (e) => {
+        e.preventDefault(); // prevents link (href="#") from scrolling the page
+        const options = document.getElementsByClassName("options");
 
         if (index == quiz.length - 1) {
-            nextBtn.innerText = "Submit";
+            showResult();
+            return;
         }
 
-        // move to the next question
-        progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
-        displayQuestion.innerText = quiz[index].question;
-        options[0].checked = false;
-        options[1].checked = false;
-    }
-}
 
-nextBtn.addEventListener('click', clickHandler);
+        if (options[0].checked || options[1].checked) {
+
+            if (index == 0 && options[1].checked) // since 'No' indicates the user is already deproved of people and thats not good
+            {
+                tips.push(quiz[index].healthTip);
+            }
+            else if (index != 0 && options[0].checked) {
+                tips.push(quiz[index].healthTip);
+            }
+
+            index++;
+
+            if (index == quiz.length - 1) {
+                nextBtn.innerText = "Submit"; // changing the text of button at the last question
+            }
+
+            // move to the next question
+            progressIndex.innerText = `Question ${index + 1}/${quiz.length}`;
+            displayQuestion.innerText = quiz[index].question;
+            options[0].checked = false;
+            options[1].checked = false;
+        }
+    }
+
+    nextBtn.addEventListener('click', clickHandler);
 </script>
 
 </html>
