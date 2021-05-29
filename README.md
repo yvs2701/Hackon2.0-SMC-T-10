@@ -6,7 +6,7 @@ Website submission to Hackon 2.0 from the **Team SMC T-10**
 Our main aim of the project is to provide an user interface using web development. Our Web Page  assist the user to anyalyse their mental and emotional well being during this unprecedented time of COVID-19.
 
 # KEY FEATURES 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Using HTML CSS JAVA SCRIPT and other key features we tried to make an interface that would assist users.
 2. Web page provides  an interactive quiz to user  consisting of some simple questions.
    + Sets a score on the basis of answer given .
@@ -16,11 +16,11 @@ Our main aim of the project is to provide an user interface using web developmen
    + It provides an intaractive window to contact or approach the professional doctor in this field.
 
 # WEBSITE
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic.*
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic.*
 [**GOD BLESS :**] (https://yvs2701.github.io/Hackon2.0-SMC-T-10/consult.html)
 
 # SCREENSHOTS
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 1. Home Page
 ![image](https://user-images.githubusercontent.com/80642685/120070429-26078d80-c0a8-11eb-85b7-aee475f1c948.png)
 ### 2. Assessment Page
