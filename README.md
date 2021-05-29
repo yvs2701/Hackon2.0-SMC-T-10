@@ -17,8 +17,9 @@ Our main aim of the project is to provide an user interface using web developmen
 
 # WEBSITE
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-*with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic.*
-[**GOD BLESS :**] https://yvs2701.github.io/Hackon2.0-SMC-T-10/consult.html
+*"with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic."*
+
+**GOD BLESS :** https://yvs2701.github.io/Hackon2.0-SMC-T-10/consult.html
 
 # SCREENSHOTS
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
