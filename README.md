@@ -16,8 +16,9 @@ Our main aim of the project is to provide an user interface using web developmen
    + It provides an intaractive window to contact or approach the professional doctor in this field.
 
 # WEBSITE
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic.*
-[**GOD BLESS :**] (https://yvs2701.github.io/Hackon2.0-SMC-T-10/consult.html)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*with a noble initiative to help people dealing with mental helth during this COVID-19 pandemic.*
+[**GOD BLESS :**] https://yvs2701.github.io/Hackon2.0-SMC-T-10/consult.html
 
 # SCREENSHOTS
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -29,4 +30,5 @@ Our main aim of the project is to provide an user interface using web developmen
 ![image](https://user-images.githubusercontent.com/80642685/120070538-a8904d00-c0a8-11eb-8cd0-4640a8c5b9a6.png)
 
 # CONCLUSION
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------COVID-19 pandemic has triggered our lives with mental and emotional issues. It's utmost important to acknowlledge the problem and tackle it . Our website aims to provide an environment to deal with such issues.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COVID-19 pandemic has triggered our lives with mental and emotional issues. It's utmost important to acknowlledge the problem and tackle it . Our website aims to provide an environment to deal with such issues.
