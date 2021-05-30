@@ -21,7 +21,13 @@ Project God-Bless is all about providing  help to people through doctors and cou
 5) Lastly we have an **consult** page which provides the contact numbers and email options of the best doctors, who may partner with us to help the people in need, and will be 24*7 available to deal with their patients.
 
 ![image](https://user-images.githubusercontent.com/80684783/120070022-885f8e80-c0a6-11eb-8f7d-498ef5f0c73e.png)
+
+## Technical desdcription:
+### Tools used:
+  - HTML
+  - CSS
+  - Bootstrap
+  - Javascript
+
 ## Special Thanks
-Special thanks goes to the organisers and team Hackon2.0 for giving us this golden oppurtunity to showcase our skills and a lot from them. Thank you so much to all the staff. 
-
-
+Special thanks goes to the organisers and team Hackon2.0 for giving us this golden oppurtunity to showcase our skills and a lot from them. Thank you so much to all the staff.
