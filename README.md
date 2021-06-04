@@ -1,5 +1,5 @@
 ## Hackon2.0-TA-T10
-Website submission to Hackon 2.0 from the team SMC T-10, with the aim of looking after people and their mental wellbeing by assessing them and providing some useful tips. Also the website provides interface to email the expert doctors and psychatrists associated with us.
+Website submission to Hackon 2.0 from the team TA T-10, with the aim of looking after people and their mental wellbeing by assessing them and providing some useful tips. Also the website provides interface to email the expert doctors and psychatrists associated with us.
 # God-Bless
 Project God-Bless is all about providing  help to people through doctors and counsellors so that people can learn more about their mental health and take better care of their well being in these challenging times that have significantly impacted our day to day lives. We are glad to help people in these situation through our project as this is the best time to come up  when world is suffering from these bad sitiuations.     
 ![image](https://user-images.githubusercontent.com/80684783/120067823-45e48480-c09b-11eb-92c0-0e44413c5591.png)
